@@ -17,5 +17,5 @@ class Produto():
 | Produto:{self.nome}
 | Valor Total:{self.preco}
 | Quantidade:{self.quantidade}
-{"="*80}
+{"="*51}
 """)

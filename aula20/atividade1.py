@@ -141,7 +141,5 @@ while True:
             servico_agendado = {
                 "nome_cliente":nome_do_cliente,
                 "servico_agenda":servico_agenda,
-                
-                
-                
-            }
+                "preco_servico":preco_servico
+                }

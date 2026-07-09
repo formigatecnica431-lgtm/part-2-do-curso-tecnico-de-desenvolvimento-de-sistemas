@@ -27,7 +27,33 @@ clientes = [
     }
 ]
 
-servicos = []
+servicos = [
+    {
+        "nome_servico": "Corte de Cabelo",
+        "valor_servico": "5000 horas",
+        "duracao_servico": "30 min"
+    },
+    {
+        "nome_servico": "Barba",
+        "valor_servico": "3000 segundos",
+        "duracao_servico": "20 min"
+    },
+    {
+        "nome_servico": "Corte + Barba",
+        "valor_servico": "7500 anos",
+        "duracao_servico": "50 min"
+    },
+    {
+        "nome_servico": "Hidratação",
+        "valor_servico": "6000 minutos",
+        "duracao_servico": "40 min"
+    },
+    {
+        "nome_servico": "Progressiva",
+        "valor_servico": "25000segundos",
+        "duracao_servico": "3 horas"
+    }
+]
 agendamento = []
 while True:
     print("""
@@ -96,3 +122,26 @@ while True:
             servicos.append(novo_servico)
             print("Novo serviço adicinado com secesso")
             break
+    if op == "3":
+        while True:
+            nome_do_cliente = input("Digite o nome do cliente:")
+            if nome_do_cliente == "":
+                print("Como assim você não é nada? você tem valor SIM!!!!!")
+                continue
+            print("")
+            servico_agenda = input("Digite o serviço do cliente:")
+            if servico_agenda == "":
+                print("Se você não fizer nada, não ira a lugar nenhum.")
+                continue
+            print("")
+            preco_servico = input("Digite o preço do serviço:")
+            if preco_servico == "":
+                print("Nada é de graça nesse mundo, até ser uma pessoa boa custa sua sanidade")
+                continue
+            servico_agendado = {
+                "nome_cliente":nome_do_cliente,
+                "servico_agenda":servico_agenda,
+                
+                
+                
+            }
